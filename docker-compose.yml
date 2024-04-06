@@ -36,7 +36,7 @@ services:
       - sqlite:/database/
     environment:
       - DATABASE_URL=file:/database/db.sqlite
-      - FRONTEND_URL=http://localhost
+      - FRONTEND_URL=http://localhost:80
       - CLEANUP_INTERVAL_SECONDS=600
       - NODE_ENV=production
       # Rate limit for uploading notes
