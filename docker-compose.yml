@@ -61,7 +61,7 @@ services:
       dockerfile: Dockerfile
       args:
         - VITE_SERVER_INTERNAL=http://backend:8080
-        - VITE_BRANDING=Noteshare.space [preview]
+        - VITE_BRANDING=andrewlee.notes
     environment:
         - NODE_ENV=production
     depends_on:

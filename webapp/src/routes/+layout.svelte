@@ -73,12 +73,12 @@
 			<div class="top-0 left-0 right-0">
 				<NavBar>
 					<svelte:fragment slot="left">
-						<NavBarLink href="/about">About</NavBarLink>
-						<NavBarLink href="/install">Get plugin</NavBarLink>
+						<!-- <NavBarLink href="/about">About</NavBarLink>
+						<NavBarLink href="/install">Get plugin</NavBarLink> -->
 						<NavBarLink href="/contact">Contact</NavBarLink>
 					</svelte:fragment>
 					<svelte:fragment slot="right">
-						<NavBarLink href="https://obsidian.md"
+						<!-- <NavBarLink href="https://obsidian.md"
 							><span class="text-[#705dcf] font-bold">Get Obsidian</span></NavBarLink
 						>
 						<NavBarLink href="https://github.com/mcndt/noteshare.space">
@@ -90,7 +90,7 @@
 									><LogoGithub /></span
 								>
 							</span>
-						</NavBarLink>
+						</NavBarLink> -->
 						<ThemeToggle bind:dark />
 					</svelte:fragment>
 					></NavBar

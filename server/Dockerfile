@@ -1,5 +1,7 @@
-FROM node:16-alpine AS BUILD_IMAGE
+FROM node:16-slim AS BUILD_IMAGE
 
+RUN apt-get update
+RUN apt-get install -y openssl
 
 # install dependencies
 WORKDIR /app
@@ -16,7 +18,10 @@ RUN npm run build
 # remove development dependencies
 RUN npm prune --production
 
-FROM node:16-alpine
+FROM node:16-slim
+
+RUN apt-get update
+RUN apt-get install -y openssl
 
 WORKDIR /app
 COPY --from=0 /app .
